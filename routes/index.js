@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' , body : 'Ronald Abel'});
 });
 
+router.get('/about', function(req, res, next) {
+  res.render('about');
+});
+
 router.get('*', function(req, res, next) {
   res.render('error');
 });
